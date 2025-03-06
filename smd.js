@@ -1017,7 +1017,7 @@ export function parser_write(p, chunk) {
 			continue
 		case '_':
 		case '*': {
-			if (p.token === IMAGE) break
+			if (p.token === IMAGE || p.token === LINK) break
 
 			/** @type {Token} */ let italic = ITALIC_AST
 			/** @type {Token} */ let strong = STRONG_AST
